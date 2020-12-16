@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etJoinDate"
+        style="@style/EditTextStyle"
+        android:hint="Enter date of joining"
+        android:focusableInTouchMode="true"/>
+
+    <EditText
+        android:id="@+id/etDOB"
+        style="@style/EditTextStyle"
+        android:hint="Enter Date-of-Birth"
+        android:layout_below="@+id/etJoinDate"/>
+
+    <TextView
+        android:id="@+id/tvYears"
+        style="@style/TextViewStyle"
+        android:text="Number of years worked: "
+        android:layout_below="@+id/etDOB"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tvJoin"
+        style="@style/Output"
+        android:layout_below="@+id/tvYears"
+        />
+
+    <TextView
+        android:id="@+id/tvDOB"
+        style="@style/TextViewStyle"
+        android:text="YOUR AGE IS: "
+        android:layout_below="@+id/tvJoin"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tvBirth"
+        style="@style/Output"
+        android:layout_below="@+id/tvDOB"
+        />
+
+
+
+
+</RelativeLayout>
